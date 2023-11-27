@@ -12,6 +12,10 @@ class OrganizationDetails(models.Model):
     conductor = models.CharField(max_length=100, default='')
     assigned_to = models.CharField(max_length=100, default='')
     rank = models.IntegerField()
+    specialite = models.CharField(max_length=100)
+    secteur = models.CharField(max_length=100)
+    service = models.CharField(max_length=100)
+    address = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
